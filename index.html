@@ -12,7 +12,7 @@
 	}
 	header {
 		width : 1000px;
-		height : 100px;
+		height : 200px;
 		margin-top : 10px;
 		border : solid 1px #cccccc;
 	}
@@ -25,17 +25,24 @@
 		margin : 30px 20px 0 0;
 	}
 	nav {
+		color : white;
+		background-color : #000000 ;
 		width : 1000px;
 		height : 70px;
 		margin-top : 10px;
+		padding-top : 30px;
 		border : solid 1px #cccccc;
+		text-align: center;
 	}
 	nav li {
-		float : left;
+		float : center;
 		margin : 20px 50px;
+		color : white;
+
 	}
 	li {
 		list-style-type: none;
+
 	}
 	section  {
 		float : left;
@@ -46,7 +53,7 @@
 		float : left;
 		margin-left : 30px;
 		margin-top : 10px;
-		border : solid 1px #cccccc;
+
 		padding-left : 25px;
 	}
 	aside li {
@@ -70,51 +77,63 @@
 		width : 1000px;
 		margin : auto;
 	}
+	.dropdownContents {
+		display : none;
+		position : absolute;
+		padding : 12px 16px;
+	}
+	.dropdown:hover .dropdownContents {
+		display : block;
+	}
+	.dropdown {
+		display : inline-block;
+	}
 </style>
 </head>
 <body>
-	<div id = 'page'>
+<div id = 'page'>
 <header>
-<div id = 'logo'> 
-	봄 여행 주간 4.27 ~ 5.12
-</div>
-<div id = 'top'>
-	로그인 | 회원가입 | 마이페이지 | 고객센터
-</div>
+<img src= './img/Miami.PNG' width = 1000 height = 200>
 </header>
-<div class='celar'> </div>
+<div class = 'clear'> </div>
+
+<div class='clear'> </div>
+
 <nav>
-	<ul>
-		<li> 여행주간이란 ? </li>
-		<li> 여행주간프로그램 </li>
-		<li> 여행정보 </li>
-		<li> 특별혜택 </li>
-		<li> 이벤트 </li>
+	<div class = "dropdown">
+		<ul> <h2>Travel Destination In USA</h2>
+		<div class = "dropdownContents">
+		<li> <h2>New York</h2> </li>
+		<li> <h2>Miami</h2> </li>
+		<li> <h2>Los Angeles</h2> </li>
+
+	</div>
+</div>
 	</ul>
 </nav>
+
 <div class = 'clear'> </div>
 <section>
-	<img src='./img/main1.PNG' width="807">
+	<img src='./img/Newyork.PNG' width = 705>
 </section>
 <aside>
 	<ul>
-		<li> 마을여행 </li>
-		<li> 핵심혜택 </li>
-		<li> 이벤트 </li>
-		<li> 대한민국 구석구석 </li>
+		<li> <h3>New York (7days)<h3> </li>
+		<li> 뉴욕 여행 패키지 </li>
+		<li> 1,980,000원  </li>
+		<li> <H3> 할인 혜택 </H3> </li>
+		<li> 2인 이상 5% 할인 </li>
+		<li> 5인 이상 10% 할인 </li>
 	</ul>
 </aside>
-<section class = 'clear'>
-	<img src ='./img/4.PNG' width 1000>
-</section>
 <div class = 'clear'> </div>
 <footer>
 	<div id='address'>
-	주최 : 문화체육관광부 </br>
-	주관 : 한국관광공사, 한국관광협회중앙회, 전국지방자체단체
+	학번 : 20190687 </br>
+	이름 : 김민석
 </div>
 <div id = 'customer'>
-	관광안내전화 : 국번없이 1330
+	자세한 내용 문의 : 010-2083-7537
 </div>
 </footer>
 </body>
